@@ -57,7 +57,7 @@
   - card = Oystercard.new
   - card.method
 - [x] Write a test for the `deduct` method, see it fail
-- [] Implement the method, see the test pass
+- [x] Implement the method, see the test pass
 
 ## Chapter 8
 - [ ] Write up a plan for how you will interact with your code and manually test in IRB.
