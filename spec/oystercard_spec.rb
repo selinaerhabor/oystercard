@@ -13,9 +13,5 @@ describe Oystercard do
 
   describe '#top_up' do
     it { is_expected.to respond_to(:top_up).with(1).argument }
-
-    it 'should increase card balance by 100' do
-      expect { subject.top_up(100) }.to change{ subject.balance }.by 1
-    end
   end
 end
