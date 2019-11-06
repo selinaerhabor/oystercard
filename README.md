@@ -46,14 +46,18 @@
   - should throw error
 - [x] Write a test that checks the `top_up` method throws an exception if the new balance would exceed the limit.
 - [x] Use a constant to store the limit
-- [ ] Implement the limit in the top_up method. Use an inline `if` statement to check if the limit would be exceeded
-- [ ] Make the error message include the limit value
-- [ ] Use interpolation to keep your code DRY
+- [x] Implement the limit in the top_up method. Use an inline `if` statement to check if the limit would be exceeded
+- [x] Make the error message include the limit value
+- [x] Use interpolation to keep your code DRY
 
 ## Chapter 7
-- [ ] Write up a plan for how you will interact with your code and manually test in IRB.
-- [ ] Write a test for the `deduct` method, see it fail
-- [ ] Implement the method, see the test pass
+- [x] Write up a plan for how you will interact with your code and manually test in IRB.
+  - IRB
+  - require './lib/oystercard.rb'
+  - card = Oystercard.new
+  - card.method
+- [x] Write a test for the `deduct` method, see it fail
+- [] Implement the method, see the test pass
 
 ## Chapter 8
 - [ ] Write up a plan for how you will interact with your code and manually test in IRB.
