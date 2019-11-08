@@ -44,6 +44,10 @@ describe Oystercard do
       expect(subject.in_journey).to eq(false)
     end
 
+    it 'should update the balance with journeys' do
+      expect{subject.touch_out}.to change{subject.balance}.by -1
+    end
+
     context 'when the maximum card balance limit would be exceeded' do
       max_balance_limit = Oystercard::MAX_BALANCE_LIMIT
       it "should raise an error: Invalid amount, maximum balance limit is #{max_balance_limit}" do
