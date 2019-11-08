@@ -28,12 +28,13 @@ class Oystercard
   end
 
   def touch_out
+    deduct(MIN_BALANCE)
     @in_journey = false
   end
 
   # private
   #
-  # def deduct(gbp)
-  #     @balance -= gbp
-  # end
+  def deduct(gbp)
+      @balance -= gbp
+  end
 end
