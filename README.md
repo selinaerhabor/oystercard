@@ -60,19 +60,19 @@
 - [x] Implement the method, see the test pass
 
 ## Chapter 8
-- [ ] Write up a plan for how you will interact with your code and manually test in IRB.
-- [ ] Write tests for `in_journey?`, `touch_in` and `touch_out`
-- [ ] Write implementation of these methods that will make the tests pass
-- [ ] Use an instance variable to track whether the card is in use
-- [ ] Use an RSpec predicate matcher to check if the card is in use
-- [ ] Use boolean values to store the state of the card
+- [x] Write up a plan for how you will interact with your code and manually test in IRB.
+- [x] Write tests for `in_journey?`, `touch_in` and `touch_out`
+- [x] Write implementation of these methods that will make the tests pass
+- [x] Use an instance variable to track whether the card is in use
+- [x] Use an RSpec predicate matcher to check if the card is in use
+- [x] Use boolean values to store the state of the card
 
 ## Chapter 9
-- [ ] Write up a plan for how you will interact with your code and manually test in IRB.
-- [ ] Write a test that checks that an error is thrown if a card with insufficient balance is touched in
-- [ ] Write the implementation
-- [ ] Update existing tests, if necessary, to make sure they still pass
-- [ ] Refactor to remove any magic numbers and replace with a constant
+- [x] Write up a plan for how you will interact with your code and manually test in IRB.
+- [x] Write a test that checks that an error is thrown if a card with insufficient balance is touched in
+- [x] Write the implementation
+- [x] Update existing tests, if necessary, to make sure they still pass
+- [x] Refactor to remove any magic numbers and replace with a constant
 
 ## Chapter 10
 - [ ] Write a test that uses `expect {}.to change{}.by()` syntax to check that a charge is made on touch out.
