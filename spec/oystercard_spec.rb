@@ -16,11 +16,11 @@ describe Oystercard do
       expect{subject.top_up 1}.to change{subject.balance}.by 1
     end
 
-    it 'should update when money is withdrawn' do
-      subject.top_up(20)
-      subject.deduct(15)
-      expect(subject.balance).to eq(5)
-    end
+    # it 'should update when money is withdrawn' do
+    #   subject.top_up(20)
+    #   subject.deduct(1)
+    #   expect(subject.balance).to eq(19)
+    # end
 
     it { is_expected.to respond_to(:touch_in) }
 
