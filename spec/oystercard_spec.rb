@@ -45,7 +45,7 @@ describe Oystercard do
     end
 
     it 'should update the balance with journeys' do
-      expect{subject.touch_out}.to change{subject.balance}.by -1
+      expect{subject.touch_out}.to change{subject.balance}.by -1.20
     end
 
     context 'when the maximum card balance limit would be exceeded' do
@@ -64,5 +64,10 @@ describe Oystercard do
       end
     end
 
+    it "displays station travelling from" do
+      station = Oystercard::STATION
+      expect {subject.touch_in('barbican'). to equal("barbican")}
+    end
+    end
+
   end
-end
