@@ -1,6 +1,6 @@
 class Oystercard
 
-  attr_reader :balance
+  attr_reader :balance, :entry_station
   attr_accessor :in_journey
 
   CHARGE = 1.20
@@ -11,6 +11,7 @@ class Oystercard
   def initialize
     @balance = 0
     @in_journey = false
+    @entry_station != nil
   end
 
   # If top up amount is greater than maximum balance limit then raise error
@@ -23,9 +24,10 @@ class Oystercard
 
   # If user touches in their oyster card, let error appear otherwise Make
   # in_journey to equal true:
-  def touch_in
+  def touch_in(station)
     fail "Less than £1" if @balance < MIN_BALANCE
     @in_journey = true
+    @entry_station = station
   end
 
   # If user touches in their oyster card, let error appear otherwise make

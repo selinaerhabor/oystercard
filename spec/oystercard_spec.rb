@@ -60,14 +60,19 @@ describe Oystercard do
       min_balance = Oystercard::MIN_BALANCE
       it "should raise an error, limit reached" do
         subject.balance < min_balance
-        expect { subject.touch_in }.to raise_error("Less than £1")
+        expect { subject.touch_in(@station) }.to raise_error("Less than £1")
       end
     end
 
-    it "displays station travelling from" do
-      station = Oystercard::STATION
-      expect {subject.touch_in('barbican'). to equal("barbican")}
-    end
+    # it "displays station travelling from" do
+    #   station = Oystercard::STATION
+    #   expect {subject.touch_in('barbican'). to equal("barbican")}
+    # end
+    it "remember entry station on touch in" do
+    subject.top_up(30)
+    subject.touch_in("Barbican")
+    expect(subject.entry_station).to eq("Barbican")
+  end
     end
 
   end
